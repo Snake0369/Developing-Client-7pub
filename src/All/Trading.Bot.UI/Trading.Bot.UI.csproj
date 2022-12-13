@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="StockSharp.Configuration.Adapters" Version="5.*" />
+    <PackageReference Include="StockSharp.Plaza" Version="5.0.125" />
+	<PackageReference Include="StockSharp.Xaml.Charting" Version="5.*" />
+	<PackageReference Include="System.ServiceModel.Http" Version="4.10.0" />
+	<PackageReference Include="System.ServiceModel.Primitives" Version="4.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trading.Bot.Transfer\Trading.Bot.Transfer.csproj" />
+  </ItemGroup>
+
+</Project>
